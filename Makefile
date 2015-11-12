@@ -60,7 +60,7 @@ deps: gflags glog protobuf zmq lz4 cityhash
 
 # xgboost
 repo/xgboost:
-	git clone https://github.com/dmlc/xgboost $@
+	git clone https://github.com/antonymayi/xgboost $@
 
 repo/xgboost/xgboost: repo/dmlc-core/libdmlc.a | repo/xgboost
 	+	$(MAKE) -C repo/xgboost config=$(config)
